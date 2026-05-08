@@ -1,10 +1,26 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import MovieDetails from "./pages/MovieDetails";
+import Search from "./pages/Search";
 
-const App = () => {
-    return (
-        <div className='flex justify-center items-center h-screen' >
-            <h1 className='text-3xl font-bold text-blue-500'>Vite + React</h1>
-        </div>
-    )
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="min-h-screen bg-black text-white font-sans">
+        {/* The Routes component acts as a switch, rendering only the first route that matches the URL */}
+        <Routes>
+          {/* Path "/" renders the Home page */}
+          <Route path="/" element={<Home />} />
+          
+          {/* Path "/movie/:id" is a dynamic route. The ":id" part can be anything! */}
+          <Route path="/movie/:id" element={<MovieDetails />} />
+          
+          {/* Path "/search" renders the Search results page */}
+          <Route path="/search" element={<Search />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
