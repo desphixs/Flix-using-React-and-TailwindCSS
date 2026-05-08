@@ -1,16 +1,18 @@
-# React + Vite
+# Build Flix: A Movie Discovery Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Flix is a sleek, dark-themed movie discovery app inspired by platforms like Netflix. You will start by setting up a persistent navigation bar and a clean home page that fetches and displays the latest trending movies. Then, you will bring the app to life by adding multiple pages. When a user clicks a movie poster, they will instantly jump to a dedicated details page filled with information about that specific film. Finally, you will wire up a search bar that lets users type in any movie title and instantly routes them to a page full of live search results.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React
+- TailwindCSS
+- TMDB API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tool
+- [Staqed](https://staqed.com)
+- [Vite](https://vite.dev)
+- [TailwindCSS](https://tailwindcss.com/docs/installation/using-vite)
+- [React](https://react.dev)
+- [TMDB](https://www.themoviedb.org/documentation/api)
