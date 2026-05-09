@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Search } from "lucide-react";
 
 const Navbar = () => {
   return (
@@ -9,7 +10,8 @@ const Navbar = () => {
       </Link>
 
       {/* Placeholder Search Bar */}
-      <div className="flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 border border-white/5 focus-within:border-white/20 transition-colors">
+      <div className="flex items-center gap-3 rounded-full bg-white/10 px-4 py-2 border border-white/5 focus-within:border-white/20 transition-colors">
+        <Search className="h-4 w-4 text-gray-500" />
         <input 
           type="text" 
           placeholder="Search movies..." 
